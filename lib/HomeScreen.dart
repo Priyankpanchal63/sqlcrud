@@ -39,8 +39,10 @@ class _HomescreenState extends State<Homescreen> {
   // Function to show dialog for adding or updating notes
   void _showFormDialog({NotesModel? note}) {
     final titleController = TextEditingController(text: note?.title ?? '');
-    final descriptionController = TextEditingController(text: note?.description ?? '');
-    final ageController = TextEditingController(text: note?.age?.toString() ?? '');
+    final descriptionController =
+        TextEditingController(text: note?.description ?? '');
+    final ageController =
+        TextEditingController(text: note?.age?.toString() ?? '');
 
     showDialog(
       context: context,
@@ -75,7 +77,8 @@ class _HomescreenState extends State<Homescreen> {
             TextButton(
               onPressed: () {
                 // Validate and save the data
-                if (titleController.text.isNotEmpty && descriptionController.text.isNotEmpty) {
+                if (titleController.text.isNotEmpty &&
+                    descriptionController.text.isNotEmpty) {
                   final newNote = NotesModel(
                     id: note?.id,
                     title: titleController.text,

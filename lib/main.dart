@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sqlcrud/HomeScreen.dart';
 
-
 void main() {
   runApp(const MyApp());
 }

@@ -21,12 +21,12 @@ class NotesModel {
   }
 
   Map<String, Object?> toMap() {
-    return{
-      'id':id,
-      'title':title,
-      'age':age,
-      'description':description,
-      'email':email
+    return {
+      'id': id,
+      'title': title,
+      'age': age,
+      'description': description,
+      'email': email
     };
   }
 }
